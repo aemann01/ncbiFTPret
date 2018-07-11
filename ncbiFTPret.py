@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-'''Usage: python ncbiFTPret.py -p /path/to/files -e file.extension [-r True/False]'''
+'''Automated download from NCBI FTP server. Can be run recursively if needed. Usage: python ncbiFTPret.py -p /path/to/files -e file.extension [-r True/False]'''
 
 import argparse
 from ftplib import FTP
@@ -66,7 +66,7 @@ def download():
 	host.quit()	
 
 def main():
-	if args.recursive is not None:
+	if args.recursive is not False:
 		recursiveDownload()
 	else:
 		getFileList()
