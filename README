@@ -1,0 +1,1 @@
+Script for downloading files from NCBI's FTP site. Can be either recursive or non-recursive. Recursive is much much slower but necessary for some file hierarchies. Still very buggy, not working copy.
